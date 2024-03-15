@@ -16,35 +16,35 @@ class Education extends Component {
     const theme = this.props.theme;
     return (
       <div className="education-main">
-        <Header theme={this.props.theme} />
+        {/* <Header theme={this.props.theme} /> */}
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
             <div className="heading-div">
-              <div className="heading-img-div">
-                {/* <img
+              <div className="heading-text-div">
+                <div className="heading-img-div">
+                  {/* <img
 									src={require("../../assests/images/education.svg")}
 									alt=""
 								/> */}
-                <EducationImg theme={theme} />
-              </div>
-              <div className="heading-text-div">
+                  <EducationImg theme={theme} />
+                </div>
                 <h1 className="heading-text" style={{ color: theme.text }}>
                   Education
                 </h1>
-                <h3 className="heading-sub-text" style={{ color: theme.text }}>
+                {/* <h3 className="heading-sub-text" style={{ color: theme.text }}>
                   Basic Qualification and Certifcations
                 </h3>
-                <CompetitiveSites logos={competitiveSites.competitiveSites} />
+                <CompetitiveSites logos={competitiveSites.competitiveSites} /> */}
               </div>
             </div>
           </Fade>
           <Educations theme={this.props.theme} />
-          {certifications.certifications.length > 0 ? (
+          {/* {certifications.certifications.length > 0 ? (
             <Certifications theme={this.props.theme} />
-          ) : null}
+          ) : null} */}
         </div>
-        <Footer theme={this.props.theme} />
-        <TopButton theme={this.props.theme} />
+        {/* <Footer theme={this.props.theme} />
+        <TopButton theme={this.props.theme} /> */}
       </div>
     );
   }

@@ -4,10 +4,20 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FeelingProud from "./FeelingProud";
+import Lottie from "react-lottie";
+import spaceboy from "../../assests/lotties/spaceboy.json";
 
 export default function Greeting(props) {
   const theme = props.theme;
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: spaceboy,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -17,11 +27,11 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
-              {greeting.nickname && (
+              {/* {greeting.nickname && (
                 <h2 className="greeting-nickname" style={{ color: theme.text }}>
                   ( {greeting.nickname} )
                 </h2>
-              )}
+              )} */}
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
@@ -49,7 +59,9 @@ export default function Greeting(props) {
 							alt="saad sitting on table"
 							src={require("../../assests/images/feelingProud.svg")}
 						></img> */}
-            <FeelingProud theme={theme} />
+            {/* <FeelingProud theme={theme} /> */}
+
+            <Lottie options={defaultOptions} height={400} width={400} />
           </div>
         </div>
       </div>
