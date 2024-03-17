@@ -4,7 +4,7 @@
 }
 
 .main-rev {
-  padding: 60px;
+  padding: 120px 60px;
 }
 
 .skills-header {
@@ -12,6 +12,7 @@
   line-height: normal;
   font-family: "Google Sans Regular";
   text-align: center;
+  padding-top: 40px;
 }
 
 .skills-text {
@@ -25,7 +26,11 @@
 
 .skills-main-div > * {
   flex: 1;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+}
+
+.skills-main-div {
+  padding-top: 100px;
 }
 
 .skills-image-div {
@@ -91,4 +96,13 @@
   .skills-image-div > * {
     margin-top: 0px;
   }
+}
+
+.repo-cards-div-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+  margin-left: 40px;
+  margin-right: 40px;
 }

@@ -18,7 +18,7 @@
   color: #868e96;
 }
 
-.header li a {
+.header li span {
   display: block;
   padding: 20px 20px;
   /* color: black; */
@@ -121,6 +121,10 @@
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+.header li {
+  cursor: pointer;
 }
 
 /* 48em = 768px */

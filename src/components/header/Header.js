@@ -15,6 +15,13 @@ const onMouseOut = (event) => {
   el.style.backgroundColor = "transparent";
 };
 
+const handleClickScroll = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 class Header extends Component {
   render() {
     const theme = this.props.theme;
@@ -24,89 +31,47 @@ class Header extends Component {
         <SeoHeader />
         <div>
           <header className="header">
-            <NavLink to={link} tag={Link} className="logo">
-              {/* <span style={{ color: theme.text }}> &lt;</span>
-              <span className="logo-name" style={{ color: theme.text }}>
-                {greeting.logo_name}
-              </span>
-              <span style={{ color: theme.text }}>/&gt;</span> */}
-            </NavLink>
+            <div />
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>
             </label>
             <ul className="menu" style={{ backgroundColor: theme.body }}>
               <li>
-                <NavLink
-                  to="/home"
+                <span
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
+                  onClick={() => handleClickScroll("skills")}
                 >
-                  Home
-                </NavLink>
+                  Skills
+                </span>
               </li>
               <li>
-                <NavLink
-                  to="/education"
+                <span
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Education
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/experience"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
+                  onClick={() => handleClickScroll("experience")}
                 >
                   Experience
-                </NavLink>
+                </span>
               </li>
               <li>
-                <NavLink
-                  to="/projects"
+                <span
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
+                  onClick={() => handleClickScroll("education")}
                 >
-                  Projects
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/opensource"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Contact Me
-                </NavLink>
+                  Education
+                </span>
               </li>
             </ul>
           </header>

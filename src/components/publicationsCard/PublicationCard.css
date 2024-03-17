@@ -7,7 +7,8 @@
   flex: 1 1 25%;
 }
 .publication-card-div:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+  border: 4px solid white;
+  padding: calc(2rem - 4px);
 }
 
 .publication-name-div {
@@ -77,4 +78,35 @@
   .publication-creation-date {
     font-size: 14px;
   }
+}
+
+.publication-card-div > div > div > p {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.publication-card-div:hover > div > div > p {
+  color: #000;
+}
+
+.publication-card-div:hover > div > div > p:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.publication-card-div > div > div > p:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }

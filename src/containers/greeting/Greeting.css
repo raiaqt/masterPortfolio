@@ -4,11 +4,12 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  height: calc(100vh - 150px);
 }
 
 .gretting-main {

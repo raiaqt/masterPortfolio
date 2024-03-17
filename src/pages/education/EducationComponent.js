@@ -15,7 +15,7 @@ class Education extends Component {
   render() {
     const theme = this.props.theme;
     return (
-      <div className="education-main">
+      <div className="education-main" id="education">
         {/* <Header theme={this.props.theme} /> */}
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">

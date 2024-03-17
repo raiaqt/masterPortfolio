@@ -209,4 +209,33 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const purpleReverseTheme = {
+  body: "#222e6e",
+  text: "#ffffff",
+  expTxtColor: "#F8EFF4",
+  highlight: "#00072D",
+  dark: "#E0B1CB",
+  secondaryText: "#F8EFF4",
+  imageHighlight: "#607d8b",
+  compImgHighlight: "#E6E6E6",
+  jacketColor: "#8eacbb",
+  headerColor: "#34515e",
+  splashBg: "#4f5b62",
+};
+
+// export const purpleReverseTheme = {
+//   body: "#F8EFF4",
+//   text: "#231942",
+//   expTxtColor: "#000a12",
+//   highlight: "#E0B1CB",
+//   dark: "#00072D",
+//   secondaryText: "#655E7A",
+//   imageHighlight: "#BE95C4",
+//   compImgHighlight: "#E6E6E6",
+//   jacketColor: "#5E548E",
+//   headerColor: "#BE95C477",
+//   splashBg: "#231942",
+// };
+
+export const chosenTheme = purpleTheme;
+export const reverseTheme = purpleReverseTheme;

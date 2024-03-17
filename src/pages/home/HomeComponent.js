@@ -6,7 +6,7 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import Education from "../education/EducationComponent";
 import Experience from "../experience/Experience";
-import { blueRevTheme } from "../../theme";
+import { reverseTheme } from "../../theme";
 
 class Home extends Component {
   render() {
@@ -14,7 +14,7 @@ class Home extends Component {
       <div>
         <Header theme={this.props.theme} />
         <Greeting theme={this.props.theme} />
-        <Skills theme={blueRevTheme} />
+        <Skills theme={reverseTheme} />
         <Experience theme={this.props.theme} />
         <Education theme={this.props.theme} />
         {/* <Footer theme={this.props.theme} />

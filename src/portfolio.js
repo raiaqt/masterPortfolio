@@ -8,12 +8,11 @@ const settings = {
 //SEO Related settings
 const seo = {
   title: "Raia",
-  description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+  description: "Bringing exploratory mindset to technical leadership",
   og: {
-    title: "Raia Portfolio",
+    title: "Raia",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "http://raia.codes/",
   },
 };
 
@@ -32,15 +31,6 @@ const greeting = {
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
-
   {
     name: "Github",
     link: "https://github.com/raiaqt",
@@ -87,51 +77,6 @@ const socialMediaLinks = [
 
 const skills = {
   data: [
-    // {
-    //   title: "Data Science & AI",
-    //   fileName: "DataScienceImg",
-    //   skills: [
-    //     "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-    //     "⚡ Experience of working with Computer Vision and NLP projects",
-    //     "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "Tensorflow",
-    //       fontAwesomeClassname: "logos-tensorflow",
-    //       style: {
-    //         backgroundColor: "transparent",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Keras",
-    //       fontAwesomeClassname: "simple-icons:keras",
-    //       style: {
-    //         backgroundColor: "white",
-    //         color: "#D00000",
-    //       },
-    //     },
-    //     {
-    //       skillName: "PyTorch",
-    //       fontAwesomeClassname: "logos-pytorch",
-    //       style: {
-    //         backgroundColor: "transparent",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Python",
-    //       fontAwesomeClassname: "ion-logo-python",
-    //       style: {
-    //         backgroundColor: "transparent",
-    //         color: "#3776AB",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Deeplearning",
-    //       imageSrc: "deeplearning_ai_logo.png",
-    //     },
-    //   ],
-    // },
     {
       title: "Full Stack Development",
       fileName: "FullStackImg",
@@ -140,6 +85,7 @@ const skills = {
         "⚡ Creating REST API endpoints using Node JS and Express",
         "⚡ Deploying apps with Docker, Kubernetes, and AWS",
       ],
+      projects: [],
       softwareSkills: [
         {
           skillName: "HTML5",
@@ -178,58 +124,17 @@ const skills = {
           },
         },
         {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-      ],
-    },
-    {
-      title: "Competitive Programming",
-      fileName: "CloudInfraImg",
-      skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
-      ],
-      softwareSkills: [
-        {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
-          style: {
-            color: "#4285F4",
-          },
-        },
-
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#0089D6",
-          },
-        },
-        {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
-          style: {
-            color: "#336791",
-          },
-        },
-        {
           skillName: "MongoDB",
           fontAwesomeClassname: "simple-icons:mongodb",
           style: {
             color: "#47A248",
+          },
+        },
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: {
+            color: "#FF9900",
           },
         },
         {
@@ -249,40 +154,86 @@ const skills = {
       ],
     },
     {
-      title: "Writing",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
+      title: "Competitive Programming",
+      fileName: "CloudInfraImg",
+      skills: ["⚡ Solving algorithm and data structure problems"],
+      projects: [
+        {
+          name: "Kattis",
+          description: "Kattis submission compilation",
+          url: "https://github.com/raiaqt/kattis-submissions",
+          createdAt: "2023",
+        },
+        {
+          name: "Online Judge",
+          description: "Online Judge submission compilation",
+          url: "https://github.com/raiaqt/onlinejudge-submissions",
+          createdAt: "2023",
+        },
       ],
       softwareSkills: [
         {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
+          skillName: "Java",
+          fontAwesomeClassname: "simple-icons:openjdk",
           style: {
-            color: "#FF2BC2",
+            color: "#ffffff",
           },
         },
         {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
+          skillName: "C++",
+          fontAwesomeClassname: "simple-icons:cplusplus",
           style: {
-            color: "#F24E1E",
+            color: "#00599C",
+          },
+        },
+      ],
+    },
+    {
+      title: "Writing",
+      fileName: "DesignImg",
+      skills: [
+        "⚡ Technical writing for scientific publications",
+        "⚡ Feature story writing for local news",
+      ],
+      projects: [
+        {
+          name: "Milton Today",
+          description:
+            "Milton Brewery Workers Organize a Strike to Protest Against Management",
+          url:
+            "https://miltontoday.com.au/milton-brewery-workers-organize-strike-protest-management/",
+          createdAt: "2018",
+        },
+        {
+          name: "Indooroopilly News",
+          description:
+            "Morningside’s Cate Campbell Aims for Gold in Gold Coast 2018",
+          url:
+            "https://morningsidenews.com.au/morningsides-cate-campbell-aims-gold-gold-coast-2018/",
+          createdAt: "2018",
+        },
+        {
+          name: "Indooroopilly News",
+          description:
+            "17-Year-Old Indooroopilly Swimming Sensation Set to Conquer the Commonwealth Games",
+          url:
+            "https://indooroopillynews.com.au/index.php/17-year-old-indooroopilly-swimming-sensation-set-conquer-commonwealth-games/",
+          createdAt: "2018",
+        },
+      ],
+      softwareSkills: [
+        {
+          skillName: "LaTeX",
+          fontAwesomeClassname: "simple-icons:latex",
+          style: {
+            color: "#008080",
           },
         },
         {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
+          skillName: "WordPress",
+          fontAwesomeClassname: "simple-icons:wordpress",
           style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
+            color: "#21759B",
           },
         },
       ],
@@ -349,7 +300,7 @@ const degrees = {
     {
       title: "University of the Philippines Manila",
       company: "Bachelor of Science in Biochemistry",
-      logo_path: "iiitk_logo.png",
+      logo_path: "up.png",
       alt_name: "IIITDM Kurnool",
       duration: "2012 - 2016",
       location: "Cum Laude",
@@ -487,7 +438,7 @@ const experience = {
           title: "Lead Engineer",
           company: "Samsung R&D Institute Philippines",
           company_url: "https://legatohealthtech.com/",
-          logo_path: "legato_logo.png",
+          logo_path: "samsung.png",
           duration: "Jan 2020 - Present",
           location: "Taguig, PH",
           description: `
@@ -500,7 +451,7 @@ const experience = {
           title: "Full Stack Developer",
           company: "Finartis",
           company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-          logo_path: "muffito_logo.png",
+          logo_path: "finartis.png",
           duration: "Sept 2018 - Oct 2019",
           location: "Makati, PH",
           description: `Initialized and developed front end and back end finance applications used by banks from different countries.
@@ -511,7 +462,7 @@ const experience = {
           title: "Researcher and Instructor",
           company: "University of the Philippines",
           company_url: "https://www.linkedin.com/company/freecopy/about/",
-          logo_path: "freecopy_logo.png",
+          logo_path: "up.png",
           duration: "Apr 2017 – Jul 2018",
           location: "Quezon City, PH",
           description: `Conducted computational chemistry research using bioinformatics tools.
